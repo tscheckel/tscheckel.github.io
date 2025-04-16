@@ -14,11 +14,11 @@ main:
   - title: "Research"
     url: /publications/
     
-  - title: "Teaching"
-    url: /teaching/    
+  #- title: "Teaching"
+  #  url: /teaching/    
     
-    - title: "Impressum"
-    url: /impressum/    
+   # - title: "Impressum"
+    #url: /impressum/    
     
   # - title: "CV"
   #   url: /cv-json/
