@@ -22,7 +22,7 @@ repository               : "tscheckel/tscheckel.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "tobias-scheckel.jpg"
   name             : "Tobias Scheckel"
   pronouns         : #"he/his"  
   bio              : "PhD student Economics"
