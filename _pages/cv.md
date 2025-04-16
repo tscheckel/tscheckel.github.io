@@ -9,4 +9,5 @@ redirect_from:
 
 {% include base_path %}
 
-Thanks for your interest in my website. It is still under construction. Stay tuned!
+This section is still under construction. Stay tuned!
+
