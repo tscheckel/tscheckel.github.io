@@ -4,7 +4,7 @@ title: "Impressum"
 permalink: /impressum/
 author_profile: true
 redirect_from:
-  - /resume
+  - /impressum
 ---
 
 Legal Disclosure
