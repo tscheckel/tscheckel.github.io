@@ -11,8 +11,8 @@ main:
   - title: "CV"
     url: /files/cv_tobias_scheckel.pdf
     
-  #- title: "Research"
-  #  url: /publications/
+  - title: "Research"
+    url: /research/
     
   #- title: "Teaching"
   #  url: /teaching/    
