@@ -15,7 +15,7 @@ probabilistic modeling of economic network.
 
 # Working Papers
 
-{% for post in site.wps reversed %}
+{% for post in site.portfolio reversed %}
   {% include archive-single.html %}
 {% endfor %}
 
