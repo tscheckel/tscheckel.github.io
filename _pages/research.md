@@ -9,7 +9,7 @@ redirect_from:
 
 I am interested in Bayesian econometric methods. My current research examines:
 estimation techniques under mis-specified models, covariance modeling and
-probabilistic modeling of economic network.
+probabilistic modeling of economic networks.
 
 {% include base_path %}
 
