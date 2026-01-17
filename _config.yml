@@ -26,7 +26,7 @@ author:
   name             : "Tobias Scheckel"
   pronouns         : "he/his"  
   bio              : "PhD student in economics"
-  location         : "Milan"
+  location         : "Vienna"
   employer         : "University of Salzburg"
   uri              : # URL
   email            : "tobias.scheckel@plus.ac.at" 
@@ -50,7 +50,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "tscheckel.bsky.social" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
