@@ -17,7 +17,3 @@ probabilistic modeling of economic networks.
 {% for post in site.wps reversed %}
   {% include archive-single.html %}
 {% endfor %}
-
-# Work in Progress
-
-Coarsened Bayesian VARs (jointly with Florian Huber and Massimiliano Marcellino)
