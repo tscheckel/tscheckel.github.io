@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in economics at the University of Salzburg (Austria), advised by Professor Florian Huber. Currently, I am conducting a research stay at Bocconi
-University Milan (Italy), where I am working with Professor Massimiliano Marcellino.
+I am a PhD student in economics at the University of Salzburg (Austria), advised by Professor Florian Huber. In the course of my PhD studies I also conducted a research stay at Bocconi
+University Milan (Italy), hosted by Professor Massimiliano Marcellino.
 
-My research interests include Bayesian time series analysis with a particular focus on Vector Autoregressions and covariance modeling.
+My research interests include Bayesian time series analysis with a particular focus on vector autoregressions and covariance modeling.
