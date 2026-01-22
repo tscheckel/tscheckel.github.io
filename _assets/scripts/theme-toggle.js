@@ -14,7 +14,7 @@
   const setIcon = (theme) => {
     const icon = toggle.querySelector("i");
     if (!icon) return;
-    icon.className = theme === "dark" ? "fas fa-sun" : "fas fa-moon";
+    icon.className = "fas fa-adjust";
     toggle.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
   };
 

@@ -92,6 +92,10 @@ h5 a:visited { color: #1c1c1c !important; }
   font-size: 1rem;
 }
 
+html[data-theme="dark"] .theme-toggle {
+  color: #ff2bd6;
+}
+
 /* Dark mode */
 html[data-theme="dark"] body {
   background-color: #000000;
