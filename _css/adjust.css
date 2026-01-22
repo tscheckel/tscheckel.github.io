@@ -127,6 +127,15 @@ html[data-theme="dark"] .author__urls a {
   color: #ff2bd6;
 }
 
+html[data-theme="dark"] .author__urls .fa-linkedin {
+  color: #39ff14;
+}
+
+html[data-theme="dark"] .author__urls .fa-envelope,
+html[data-theme="dark"] .author__urls .fa-github {
+  color: #39ff14;
+}
+
 html[data-theme="dark"] h1,
 html[data-theme="dark"] h2,
 html[data-theme="dark"] h3,
