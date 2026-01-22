@@ -107,15 +107,20 @@ html[data-theme="dark"] .greedy-nav {
 
 html[data-theme="dark"] .greedy-nav a,
 html[data-theme="dark"] .greedy-nav a.site-title {
-  color: #39ff14;
+  color: #ff2bd6;
+  font-family: "Share Tech Mono", "Fira Mono", "Menlo", "Consolas", "Liberation Mono", monospace;
 }
 
 html[data-theme="dark"] .greedy-nav a:hover {
-  color: #7cff6b;
+  color: #ff66e6;
 }
 
 html[data-theme="dark"] .page__content a {
-  color: #39ff14;
+  color: #ff2bd6;
+}
+
+html[data-theme="dark"] .author__urls a {
+  color: #ff2bd6;
 }
 
 html[data-theme="dark"] h1,
@@ -144,7 +149,7 @@ html[data-theme="dark"] .franklin-content h4 a,
 html[data-theme="dark"] .franklin-content h5 a,
 html[data-theme="dark"] .franklin-content h6 a,
 html[data-theme="dark"] .franklin-content .header-anchor {
-  color: #39ff14 !important;
+  color: #ff2bd6 !important;
 }
 
 html[data-theme="dark"] .author__avatar img {
@@ -155,7 +160,8 @@ html[data-theme="dark"] .site-title,
 html[data-theme="dark"] .page__title,
 html[data-theme="dark"] .author__name,
 html[data-theme="dark"] .author__bio,
-html[data-theme="dark"] .author__urls {
+html[data-theme="dark"] .author__urls,
+html[data-theme="dark"] .author__urls li {
   font-family: "Share Tech Mono", "Fira Mono", "Menlo", "Consolas", "Liberation Mono", monospace;
 }
 
