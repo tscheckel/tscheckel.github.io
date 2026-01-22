@@ -41,6 +41,25 @@ blockquote {
   margin-bottom: 1em;
 }
 
+/* Light mode heading color */
+html:not([data-theme="dark"]) h1,
+html:not([data-theme="dark"]) h2,
+html:not([data-theme="dark"]) h3,
+html:not([data-theme="dark"]) h4,
+html:not([data-theme="dark"]) h5,
+html:not([data-theme="dark"]) h6 {
+  color: #315f97;
+}
+
+html:not([data-theme="dark"]) h1 a,
+html:not([data-theme="dark"]) h2 a,
+html:not([data-theme="dark"]) h3 a,
+html:not([data-theme="dark"]) h4 a,
+html:not([data-theme="dark"]) h5 a,
+html:not([data-theme="dark"]) h6 a {
+  color: #315f97 !important;
+}
+
 .franklin-content a {
   text-decoration: none;
 }
@@ -71,11 +90,11 @@ h5 a:visited { color: #1c1c1c !important; }
 /* Header text color */
 .greedy-nav a,
 .greedy-nav a.site-title {
-  color: #c1121f;
+  color: #315f97;
 }
 
 .greedy-nav a:hover {
-  color: #8a0f17;
+  color: #2a4f7d;
 }
 
 /* Theme toggle button */
