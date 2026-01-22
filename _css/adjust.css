@@ -57,3 +57,52 @@ h2 a:visited { color: #1c1c1c !important; }
 h3 a:visited { color: #1c1c1c !important; }
 h4 a:visited { color: #1c1c1c !important; }
 h5 a:visited { color: #1c1c1c !important; }
+
+/* Header text color */
+.greedy-nav a,
+.greedy-nav a.site-title {
+  color: #c1121f;
+}
+
+.greedy-nav a:hover {
+  color: #8a0f17;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.5rem;
+  color: inherit;
+}
+
+.theme-toggle i {
+  font-size: 1rem;
+}
+
+/* Dark mode */
+html[data-theme="dark"] body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+html[data-theme="dark"] .masthead,
+html[data-theme="dark"] .greedy-nav {
+  background-color: #0b1220;
+  border-bottom-color: #0b1220;
+}
+
+html[data-theme="dark"] .greedy-nav a,
+html[data-theme="dark"] .greedy-nav a.site-title {
+  color: #e2e8f0;
+}
+
+html[data-theme="dark"] .greedy-nav a:hover {
+  color: #cbd5f5;
+}
+
+html[data-theme="dark"] .page__content a {
+  color: #93c5fd;
+}
