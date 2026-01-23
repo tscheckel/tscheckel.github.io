@@ -164,6 +164,23 @@ html[data-theme="dark"] .page__footer {
   color: #39ff14;
 }
 
+html[data-theme="dark"] .page__footer a {
+  color: #ff2bd6;
+}
+
+html[data-theme="dark"] .page__footer .fas,
+html[data-theme="dark"] .page__footer .fab,
+html[data-theme="dark"] .page__footer .far,
+html[data-theme="dark"] .page__footer .fal {
+  color: #39ff14 !important;
+}
+
+html[data-theme="dark"] .page__footer .svg-inline--fa,
+html[data-theme="dark"] .page__footer svg {
+  color: #39ff14 !important;
+  fill: #39ff14 !important;
+}
+
 html[data-theme="dark"] .page-foot {
   color: #39ff14;
   border-top-color: #39ff14;
