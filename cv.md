@@ -2,6 +2,4 @@
 title = "CV"
 +++
 
-# CV
-
-Add your CV details here.
+You can find my detailed CV [here](/assets/cv.pdf).
