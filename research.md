@@ -4,4 +4,6 @@ title = "Research"
 
 # Research
 
-Write your research content here.
+## Working papers
+
+{{working_papers}}
