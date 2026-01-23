@@ -135,6 +135,15 @@ html[data-theme="dark"] body {
   font-family: "Share Tech Mono", "Fira Mono", "Menlo", "Consolas", "Liberation Mono", monospace;
 }
 
+html[data-theme="dark"] {
+  background-color: #000000;
+}
+
+html[data-theme="dark"] .initial-content,
+html[data-theme="dark"] #main {
+  background-color: #000000;
+}
+
 html[data-theme="dark"] .masthead,
 html[data-theme="dark"] .greedy-nav {
   background-color: #000000;
@@ -186,6 +195,7 @@ html[data-theme="dark"] .page-foot {
   border-top-color: #39ff14;
   font-family: "Share Tech Mono", "Fira Mono", "Menlo", "Consolas", "Liberation Mono", monospace;
   background-color: #000000;
+  margin-bottom: 0;
 }
 
 html[data-theme="dark"] .author__urls a {
