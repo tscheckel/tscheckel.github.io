@@ -159,10 +159,16 @@ html[data-theme="dark"] .franklin-content a {
   color: #ff2bd6;
 }
 
+html[data-theme="dark"] .page__footer {
+  background-color: #000000;
+  color: #39ff14;
+}
+
 html[data-theme="dark"] .page-foot {
   color: #39ff14;
   border-top-color: #39ff14;
   font-family: "Share Tech Mono", "Fira Mono", "Menlo", "Consolas", "Liberation Mono", monospace;
+  background-color: #000000;
 }
 
 html[data-theme="dark"] .author__urls a {
