@@ -60,6 +60,19 @@ html:not([data-theme="dark"]) h6 a {
   color: #315f97 !important;
 }
 
+html:not([data-theme="dark"]) .page__content a,
+html:not([data-theme="dark"]) .franklin-content a {
+  color: #315f97;
+}
+
+html:not([data-theme="dark"]) .author__urls a {
+  color: #315f97;
+}
+
+html:not([data-theme="dark"]) .author__urls a .fa-envelope {
+  color: #494e52;
+}
+
 .franklin-content a {
   text-decoration: none;
 }
@@ -139,6 +152,10 @@ html[data-theme="dark"] .greedy-nav a:hover {
 }
 
 html[data-theme="dark"] .page__content a {
+  color: #ff2bd6;
+}
+
+html[data-theme="dark"] .franklin-content a {
   color: #ff2bd6;
 }
 
