@@ -19,6 +19,36 @@ function _escape_html(s::AbstractString)
   return replace(s, "&" => "&amp;", "<" => "&lt;", ">" => "&gt;", "\"" => "&quot;")
 end
 
+function _format_authors(raw::AbstractString)
+  parts = [strip(p) for p in split(raw, " and ") if !isempty(strip(p))]
+  if length(parts) <= 1
+    return raw
+  elseif length(parts) == 2
+    return string(parts[1], " and ", parts[2])
+  else
+    head = join(parts[1:end-2], ", ")
+    return string(head, ", ", parts[end-1], " and ", parts[end])
+  end
+end
+
+function _primary_author_lastname(raw::AbstractString)
+  parts = [strip(p) for p in split(raw, " and ") if !isempty(strip(p))]
+  if isempty(parts)
+    return ""
+  end
+  first_author = parts[1]
+  if occursin(",", first_author)
+    return strip(split(first_author, ",")[1])
+  end
+  tokens = [t for t in split(first_author) if !isempty(t)]
+  return isempty(tokens) ? "" : tokens[end]
+end
+
+function _year_as_int(raw::AbstractString)
+  y = tryparse(Int, strip(raw))
+  return y === nothing ? typemax(Int) : y
+end
+
 const _working_paper_types = Set(["workingpaper", "techreport", "misc"])
 
 function _read_working_papers(path::AbstractString)
@@ -94,6 +124,8 @@ function hfun_working_papers(params)
   end
   entries = filter(entry -> get(entry, "_type", "") in _working_paper_types,
                    _read_working_papers(path))
+  sort!(entries, by = e -> (lowercase(_primary_author_lastname(get(e, "author", ""))),
+                            _year_as_int(get(e, "year", ""))))
   if isempty(entries)
     return "<p><em>No working papers found.</em></p>"
   end
@@ -107,7 +139,7 @@ function hfun_working_papers(params)
     url = get(entry, "url", "")
     write(io, "<li>")
     if !isempty(authors)
-      write(io, _escape_html(authors), ". ")
+      write(io, _escape_html(_format_authors(authors)), ". ")
     end
     if !isempty(title)
       if !isempty(url)
