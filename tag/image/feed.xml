@@ -9,14 +9,14 @@
 
   <channel>
     <title>
-      <![CDATA[  Your Name - Academic Homepage  ]]>
+      <![CDATA[  Franklin Template  ]]>
     </title>
-    <link> https://tscheckel.github.io/tscheckel-franklin/ </link>
+    <link> https://tlienart.github.io/FranklinTemplates.jl/ </link>
     <description>
-      <![CDATA[  Updates from my academic website  ]]>
+      <![CDATA[  Example website using Franklin  ]]>
     </description>
     <atom:link
-      href="https://tscheckel.github.io/tscheckel-franklin/feed.xml"
+      href="https://tlienart.github.io/FranklinTemplates.jl/feed.xml"
       rel="self"
       type="application/rss+xml" />
 
@@ -35,7 +35,7 @@
   
   
   <atom:author>
-    <atom:name>Your Name</atom:name>
+    <atom:name>Tobias Scheckel</atom:name>
   </atom:author>
         
 </item>
