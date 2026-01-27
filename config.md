@@ -26,7 +26,12 @@
     Define menu items as a list of (name, url) tuples.
     Access in templates with {{menu}} 
 -->
-@def menu = [("Home", "/"), ("Research", "/research/"), ("Publications", "/publications/"), ("CV", "/cv/")]
+@def menu = [
+    ("Home",         "/"),
+    ("Research",     "/research/"),
+    ("Publications", "/publications/"),
+    ("CV",           "/cv/"),
+]
 
 <!--
     PAGE DEFAULTS
