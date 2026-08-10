@@ -217,7 +217,7 @@ html[data-theme="dark"] h3,
 html[data-theme="dark"] h4,
 html[data-theme="dark"] h5,
 html[data-theme="dark"] h6 {
-  color: #39ff14;
+  color: #f6ff00;
   font-family: "Share Tech Mono", "Fira Mono", "Menlo", "Consolas", "Liberation Mono", monospace;
 }
 
@@ -227,9 +227,12 @@ html[data-theme="dark"] .franklin-content h3,
 html[data-theme="dark"] .franklin-content h4,
 html[data-theme="dark"] .franklin-content h5,
 html[data-theme="dark"] .franklin-content h6 {
-  color: #39ff14 !important;
+  color: #f6ff00 !important;
 }
 
+/* Franklin wraps heading text in a (disabled) anchor, so the heading colour has
+ * to be repeated here, otherwise headings pick up the pink link colour.
+ */
 html[data-theme="dark"] .franklin-content h1 a,
 html[data-theme="dark"] .franklin-content h2 a,
 html[data-theme="dark"] .franklin-content h3 a,
@@ -237,7 +240,7 @@ html[data-theme="dark"] .franklin-content h4 a,
 html[data-theme="dark"] .franklin-content h5 a,
 html[data-theme="dark"] .franklin-content h6 a,
 html[data-theme="dark"] .franklin-content .header-anchor {
-  color: #ff2bd6 !important;
+  color: #f6ff00 !important;
 }
 
 html[data-theme="dark"] .author__avatar img {
