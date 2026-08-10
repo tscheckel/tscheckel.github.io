@@ -44,9 +44,10 @@ function _primary_author_lastname(raw::AbstractString)
   return isempty(tokens) ? "" : tokens[end]
 end
 
-function _year_as_int(raw::AbstractString)
+"""Sort key ordering years newest first; entries without a year sort last."""
+function _year_desc_key(raw::AbstractString)
   y = tryparse(Int, strip(raw))
-  return y === nothing ? typemax(Int) : y
+  return y === nothing ? (1, 0) : (0, -y)
 end
 
 const _working_paper_types = Set(["workingpaper", "techreport", "misc"])
@@ -124,8 +125,8 @@ function hfun_working_papers(params)
   end
   entries = filter(entry -> get(entry, "_type", "") in _working_paper_types,
                    _read_working_papers(path))
-  sort!(entries, by = e -> (lowercase(_primary_author_lastname(get(e, "author", ""))),
-                            _year_as_int(get(e, "year", ""))))
+  sort!(entries, by = e -> (_year_desc_key(get(e, "year", "")),
+                            lowercase(_primary_author_lastname(get(e, "author", "")))))
   if isempty(entries)
     return "<p><em>No working papers found.</em></p>"
   end
@@ -136,6 +137,7 @@ function hfun_working_papers(params)
     authors = get(entry, "author", "")
     year = get(entry, "year", "")
     note = get(entry, "note", "")
+    status = get(entry, "status", "")
     url = get(entry, "url", "")
     write(io, "<li>")
     if !isempty(authors)
@@ -150,6 +152,9 @@ function hfun_working_papers(params)
     end
     if !isempty(year)
       write(io, " (", _escape_html(year), ")")
+    end
+    if !isempty(status)
+      write(io, ". <em>", _escape_html(status), "</em>")
     end
     if !isempty(note)
       write(io, " (", _escape_html(note), ")")
