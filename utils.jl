@@ -152,7 +152,7 @@ function hfun_working_papers(params)
       write(io, " (", _escape_html(year), ")")
     end
     if !isempty(note)
-      write(io, ". ", _escape_html(note))
+      write(io, " (", _escape_html(note), ")")
     end
     write(io, "</li>")
   end
