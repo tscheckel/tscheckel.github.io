@@ -4,10 +4,10 @@ My recent research examines the use of probabilistic network models and structur
 
 In my ongoing work, I examine functional vector autoregressions, local projections, Gaussian processes, and Dirichlet process mixtures, among other things.
 
-## Working papers
-
-{{working_papers}}
-
 ## Work in progress
 
 {{working_papers work_in_progress.bib}}
+
+## Working papers
+
+{{working_papers}}
