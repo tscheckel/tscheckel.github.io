@@ -206,6 +206,7 @@ html[data-theme="dark"] .author__urls .fa-linkedin {
   color: #39ff14;
 }
 
+html[data-theme="dark"] .author__urls .fa-orcid,
 html[data-theme="dark"] .author__urls .fa-envelope,
 html[data-theme="dark"] .author__urls .fa-github {
   color: #39ff14;
